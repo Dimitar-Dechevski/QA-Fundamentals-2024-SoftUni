@@ -1,0 +1,59 @@
+function calculateFamilyTrip(mode, distanceLength, people, budget, destination) {
+    const CAR_FUEL_CONSUMPTION = 8.5; 
+    const CAR_TANK_CAPACITY = 60; 
+    const CAR_FUEL_COST = 1.5; 
+    const CAR_SPEED = 500; 
+    const TRAIN_FARE = 0.15; 
+    const TRAIN_SPEED = 800; 
+    const PLANE_FARE = 0.3; 
+    const PLANE_SPEED = 1000; 
+    const BUS_FARE = 0.1; 
+    const BUS_SPEED = 600; 
+    const ACCOMMODATION_COST = 100; 
+
+    let travelCost = 0;
+    let travelTime = 0;
+    if (mode === "car") {
+        const totalLitersNeeded = (distanceLength / 100) * CAR_FUEL_CONSUMPTION;
+        travelCost = totalLitersNeeded * CAR_FUEL_COST;
+
+        const litresAbove = Math.max(CAR_TANK_CAPACITY - 5 - totalLitersNeeded, 0);
+        let timesToRefuel = 0;
+        if (totalLitersNeeded > CAR_TANK_CAPACITY - 5) {
+            timesToRefuel = Math.ceil((totalLitersNeeded - litresAbove) / (CAR_TANK_CAPACITY - 5));
+        }
+        const litersToRefuel = timesToRefuel * (CAR_TANK_CAPACITY - 5) - litresAbove;
+
+        travelCost += litersToRefuel * CAR_FUEL_COST;
+
+        travelTime = distanceLength / CAR_SPEED;
+    } else if (mode === "train") {
+        travelCost = distanceLength * TRAIN_FARE * people;
+
+        travelTime = distanceLength / TRAIN_SPEED;
+    } else if (mode === "plane") {
+        travelCost = distanceLength * PLANE_FARE * people;
+
+        travelTime = distanceLength / PLANE_SPEED;
+    } else if (mode === "bus") {
+        travelCost = distanceLength * BUS_FARE * people;
+
+        travelTime = distanceLength / BUS_SPEED;
+    } else {
+        return "Please enter a valid mode of transportation: car, train, plane, or bus.";
+    }
+
+    const nights = Math.ceil(travelTime); 
+    const accommodationCost = nights * people * ACCOMMODATION_COST;
+
+    const totalCost = travelCost + accommodationCost;
+    const balance = budget - totalCost;
+
+    const outputBalance = balance >= 0 ? `You will have $${balance.toFixed(2)} left.` : `You will need an extra $${Math.abs(balance).toFixed(2)}.`;
+    return `The family of ${people} people will travel by ${mode} for a ${distanceLength} km trip to ${destination}. The travel cost will be $${travelCost.toFixed(2)} and the travel time will be ${travelTime} days. The accommodation will cost $${accommodationCost}. The total cost of the trip will be $${totalCost.toFixed(2)}. ${outputBalance}`;
+}
+
+calculateFamilyTrip("plane", 1000, 6, 5000, "City Tour");
+
+
+
