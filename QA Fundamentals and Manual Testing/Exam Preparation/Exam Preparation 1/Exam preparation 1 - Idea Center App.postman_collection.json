@@ -1,0 +1,214 @@
+{
+	"info": {
+		"_postman_id": "99652b32-f466-4fbd-b11d-2ada583d559e",
+		"name": "Exam preparation 1 - Idea Center App",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10275312"
+	},
+	"item": [
+		{
+			"name": "User/Authentication",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"mitak@mitak.com\",\r\n    \"password\": \"799799dd!\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://softuni-qa-loadbalancer-2137572849.eu-north-1.elb.amazonaws.com:84/api/User/Authentication",
+					"protocol": "http",
+					"host": [
+						"softuni-qa-loadbalancer-2137572849",
+						"eu-north-1",
+						"elb",
+						"amazonaws",
+						"com"
+					],
+					"port": "84",
+					"path": [
+						"api",
+						"User",
+						"Authentication"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/Idea/Create",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJKd3RTZXJ2aWNlQWNjZXNzVG9rZW4iLCJqdGkiOiJiNjNiMzBmOS1mMTc1LTQ5MjItYWQ0YS0zOTQwYTc0MDExMjgiLCJpYXQiOiIwNS8wMS8yMDI0IDIyOjE1OjUzIiwiVXNlcklkIjoiNWY5NTc2MjMtOTdjOS00YmUxLTZlNmYtMDhkYzZhMjEwOWIxIiwiRW1haWwiOiJtaXRha0BtaXRhay5jb20iLCJVc2VyTmFtZSI6Im1pdGFrIiwiZXhwIjoxNzE0NjIzMzUzLCJpc3MiOiJJZGVhQ2VudGVyX0FwcF9Tb2Z0VW5pIiwiYXVkIjoiSWRlYUNlbnRlcl9XZWJBUElfU29mdFVuaSJ9.XmOJEEoIs3EWdyv7_VwEV_1Ye0DwlalUBJK-5sg5GX4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Wimbledon 2024\",\r\n    \"description\": \"The oldest Grand Slam tennis tournament\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://softuni-qa-loadbalancer-2137572849.eu-north-1.elb.amazonaws.com:84/api/Idea/Create",
+					"protocol": "http",
+					"host": [
+						"softuni-qa-loadbalancer-2137572849",
+						"eu-north-1",
+						"elb",
+						"amazonaws",
+						"com"
+					],
+					"port": "84",
+					"path": [
+						"api",
+						"Idea",
+						"Create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/Idea/All",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJKd3RTZXJ2aWNlQWNjZXNzVG9rZW4iLCJqdGkiOiJiNjNiMzBmOS1mMTc1LTQ5MjItYWQ0YS0zOTQwYTc0MDExMjgiLCJpYXQiOiIwNS8wMS8yMDI0IDIyOjE1OjUzIiwiVXNlcklkIjoiNWY5NTc2MjMtOTdjOS00YmUxLTZlNmYtMDhkYzZhMjEwOWIxIiwiRW1haWwiOiJtaXRha0BtaXRhay5jb20iLCJVc2VyTmFtZSI6Im1pdGFrIiwiZXhwIjoxNzE0NjIzMzUzLCJpc3MiOiJJZGVhQ2VudGVyX0FwcF9Tb2Z0VW5pIiwiYXVkIjoiSWRlYUNlbnRlcl9XZWJBUElfU29mdFVuaSJ9.XmOJEEoIs3EWdyv7_VwEV_1Ye0DwlalUBJK-5sg5GX4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://softuni-qa-loadbalancer-2137572849.eu-north-1.elb.amazonaws.com:84/api/Idea/All",
+					"protocol": "http",
+					"host": [
+						"softuni-qa-loadbalancer-2137572849",
+						"eu-north-1",
+						"elb",
+						"amazonaws",
+						"com"
+					],
+					"port": "84",
+					"path": [
+						"api",
+						"Idea",
+						"All"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/Idea/Edit?ideaId=2d79d08f-8976-4496-0789-08dc66b194bb",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJKd3RTZXJ2aWNlQWNjZXNzVG9rZW4iLCJqdGkiOiJiNjNiMzBmOS1mMTc1LTQ5MjItYWQ0YS0zOTQwYTc0MDExMjgiLCJpYXQiOiIwNS8wMS8yMDI0IDIyOjE1OjUzIiwiVXNlcklkIjoiNWY5NTc2MjMtOTdjOS00YmUxLTZlNmYtMDhkYzZhMjEwOWIxIiwiRW1haWwiOiJtaXRha0BtaXRhay5jb20iLCJVc2VyTmFtZSI6Im1pdGFrIiwiZXhwIjoxNzE0NjIzMzUzLCJpc3MiOiJJZGVhQ2VudGVyX0FwcF9Tb2Z0VW5pIiwiYXVkIjoiSWRlYUNlbnRlcl9XZWJBUElfU29mdFVuaSJ9.XmOJEEoIs3EWdyv7_VwEV_1Ye0DwlalUBJK-5sg5GX4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Wimbledon 2024\",\r\n    \"url\": \"https://logowik.com/content/uploads/images/298_wimbledon.jpg\",\r\n    \"description\": \"The oldest Grand Slam tennis tournament\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://softuni-qa-loadbalancer-2137572849.eu-north-1.elb.amazonaws.com:84/api/Idea/Edit?ideaId=2d79d08f-8976-4496-0789-08dc66b194bb",
+					"protocol": "http",
+					"host": [
+						"softuni-qa-loadbalancer-2137572849",
+						"eu-north-1",
+						"elb",
+						"amazonaws",
+						"com"
+					],
+					"port": "84",
+					"path": [
+						"api",
+						"Idea",
+						"Edit"
+					],
+					"query": [
+						{
+							"key": "ideaId",
+							"value": "2d79d08f-8976-4496-0789-08dc66b194bb"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/Idea/Delete?ideaId=2d79d08f-8976-4496-0789-08dc66b194bb",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJKd3RTZXJ2aWNlQWNjZXNzVG9rZW4iLCJqdGkiOiJiNjNiMzBmOS1mMTc1LTQ5MjItYWQ0YS0zOTQwYTc0MDExMjgiLCJpYXQiOiIwNS8wMS8yMDI0IDIyOjE1OjUzIiwiVXNlcklkIjoiNWY5NTc2MjMtOTdjOS00YmUxLTZlNmYtMDhkYzZhMjEwOWIxIiwiRW1haWwiOiJtaXRha0BtaXRhay5jb20iLCJVc2VyTmFtZSI6Im1pdGFrIiwiZXhwIjoxNzE0NjIzMzUzLCJpc3MiOiJJZGVhQ2VudGVyX0FwcF9Tb2Z0VW5pIiwiYXVkIjoiSWRlYUNlbnRlcl9XZWJBUElfU29mdFVuaSJ9.XmOJEEoIs3EWdyv7_VwEV_1Ye0DwlalUBJK-5sg5GX4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://softuni-qa-loadbalancer-2137572849.eu-north-1.elb.amazonaws.com:84/api/Idea/Delete?ideaId=2d79d08f-8976-4496-0789-08dc66b194bb",
+					"protocol": "http",
+					"host": [
+						"softuni-qa-loadbalancer-2137572849",
+						"eu-north-1",
+						"elb",
+						"amazonaws",
+						"com"
+					],
+					"port": "84",
+					"path": [
+						"api",
+						"Idea",
+						"Delete"
+					],
+					"query": [
+						{
+							"key": "ideaId",
+							"value": "2d79d08f-8976-4496-0789-08dc66b194bb"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

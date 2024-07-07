@@ -1,0 +1,12 @@
+D:\QA\QA Fundamentals\QA Fundamentals and Manual Testing\Databases\Exercise\TaskBoard\TaskBoard\TaskBoard\TaskBoard.Data\bin\Debug\net6.0\TaskBoard.Data.deps.json
+D:\QA\QA Fundamentals\QA Fundamentals and Manual Testing\Databases\Exercise\TaskBoard\TaskBoard\TaskBoard\TaskBoard.Data\bin\Debug\net6.0\TaskBoard.Data.dll
+D:\QA\QA Fundamentals\QA Fundamentals and Manual Testing\Databases\Exercise\TaskBoard\TaskBoard\TaskBoard\TaskBoard.Data\bin\Debug\net6.0\TaskBoard.Data.pdb
+D:\QA\QA Fundamentals\QA Fundamentals and Manual Testing\Databases\Exercise\TaskBoard\TaskBoard\TaskBoard\TaskBoard.Data\obj\Debug\net6.0\TaskBoard.Data.csproj.AssemblyReference.cache
+D:\QA\QA Fundamentals\QA Fundamentals and Manual Testing\Databases\Exercise\TaskBoard\TaskBoard\TaskBoard\TaskBoard.Data\obj\Debug\net6.0\TaskBoard.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\QA\QA Fundamentals\QA Fundamentals and Manual Testing\Databases\Exercise\TaskBoard\TaskBoard\TaskBoard\TaskBoard.Data\obj\Debug\net6.0\TaskBoard.Data.AssemblyInfoInputs.cache
+D:\QA\QA Fundamentals\QA Fundamentals and Manual Testing\Databases\Exercise\TaskBoard\TaskBoard\TaskBoard\TaskBoard.Data\obj\Debug\net6.0\TaskBoard.Data.AssemblyInfo.cs
+D:\QA\QA Fundamentals\QA Fundamentals and Manual Testing\Databases\Exercise\TaskBoard\TaskBoard\TaskBoard\TaskBoard.Data\obj\Debug\net6.0\TaskBoard.Data.csproj.CoreCompileInputs.cache
+D:\QA\QA Fundamentals\QA Fundamentals and Manual Testing\Databases\Exercise\TaskBoard\TaskBoard\TaskBoard\TaskBoard.Data\obj\Debug\net6.0\TaskBoard.Data.dll
+D:\QA\QA Fundamentals\QA Fundamentals and Manual Testing\Databases\Exercise\TaskBoard\TaskBoard\TaskBoard\TaskBoard.Data\obj\Debug\net6.0\refint\TaskBoard.Data.dll
+D:\QA\QA Fundamentals\QA Fundamentals and Manual Testing\Databases\Exercise\TaskBoard\TaskBoard\TaskBoard\TaskBoard.Data\obj\Debug\net6.0\TaskBoard.Data.pdb
+D:\QA\QA Fundamentals\QA Fundamentals and Manual Testing\Databases\Exercise\TaskBoard\TaskBoard\TaskBoard\TaskBoard.Data\obj\Debug\net6.0\ref\TaskBoard.Data.dll
